@@ -33,7 +33,7 @@ input {
   flex-direction: column;
   align-items: center;
 }
-button[data-start] {
+button.timer-start {
   height: 30px;
   width: 60px;
   background-color: #32c682;
@@ -41,7 +41,7 @@ button[data-start] {
   transition: background-color 350ms linear;
   border-radius: 5px;
 }
-button[disabled] {
+button.timer-start[disabled] {
   background-color: #ff5549;
   color: aliceblue;
 }
