@@ -63,6 +63,9 @@ startBtn.addEventListener('click', () => {
     ) {
       clearInterval(timer);
       Notiflix.Notify.info('Countdown is over');
+      document
+        .querySelectorAll('input')
+        .forEach(inp => inp.removeAttribute('disabled'));
     }
   }, 1000);
 });
